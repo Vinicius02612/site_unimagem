@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/index.css">
+<!--  <link rel="stylesheet" href="./styles/teste.css"> -->
+
+
+    <title>Unimagem</title>
+</head>
+<body>
+   
+    <div class="header" id="header">
+
+        <button onclick="mostrarNavBar()" class="btn_icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <div class="logo" >
+            <img src="./imgs/Unimagem.png" alt="">
+        </div>
+
+        <div class="navegacao" id="navegacao">
+            <button onclick="mostrarNavBar()" class="btn_icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                </svg>
+            </button>
+            <a href="#home" >Home</a>
+            <a href="#">Serviços</a>
+            <a href="#">Profissionais</a>
+            <a href="#">Dicas</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="informacao" id="#home">
+
+            <div  class="text">
+
+                <h1>Venha conhecer a <span>Unimagem</span> </h1><br><br><br>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pharetra dictum nibh.
+                    Suspendisse vulputate interdum sodales. Praesent vel ante bibendum, condimentum nulla at,
+                    congue justo. Ut a erat at metus pharetra laoreet in sit amet lectus.
+                    sapien a magna molestie mattis. Duis ac mi mattis, mattis leo quis, cursus sem.
+                    commodo non risus. Sed a dui sit amet leo tempus pharetra ac vitae nisl.
+                </p>
+
+                <button type="submit">
+                    <a href="#sobre">Saiba mais</a>
+                </button>
+            </div>
+
+            <div class="localimg">
+                <img class="img" src="./imgs/5207289-removebg-preview.png" alt="medicos">
+            </div>
+        </div>
+
+        <div class="sobre" id="sobre">
+            <h1>Quem somos?</h1>
+            <div class="info_text">
+                <p>
+                    Somos uma empresa genuinamente picoense, há muitos anos prestando serviços de Radiologia e Imagem para a população de Picos-PI e macroregião com a missão de prestar um atendimento de qualidade, e fazer dos nossos serviços os melhores da região.
+                </p>
+            </div>
+        </div>
+
+        <div class="fale_conosco">
+            
+                <h1>Tem duvidas ou sugestões?</h3>
+                <h2>Entre em contato com a gente</h4>
+                <div class="area_forms" id="contato">
+                    <form action="#" method="get">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Endereço de email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Telefone</label>
+                            <input type="text" class="form-control" id="telefone" placeholder=" Ex:89 ---">
+                        </div>    
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Escreva aqui sua dúvida, ou sugestão</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button class="enviar_info">Enviar</button>
+                    </form>
+
+                   
+                </div>
+         
+            
+        </div>
+    </div>
+
+
+  
+    <script src="./script/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
