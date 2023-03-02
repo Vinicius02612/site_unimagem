@@ -1,24 +1,58 @@
+/* Url ficiticia para ser usada quando o usuario aceitar os termos */
 
-var header = document.getElementById('header')
-var navegacao = document.getElementById('navegacao')
-var main = document.getElementById('main')
-var showSideBar = false
+let urlCookie = 'https://jsonplaceholder.typicode.com/posts' 
 
 
-function mostrarNavBar(){
-    showSideBar = !showSideBar
-    console.log(showSideBar)
+/* modal de com as informações do cookie e politca de privacidade */
+let cookieHtml = `
 
-    if(showSideBar){
-        console.log(showSideBar)
-        navegacao.style.marginLeft = "5vw"
+    <div class="modal">
+        <h3>Atenção</h3>
+        <div class="text-modal">      
+            <p>
+            Nós uttilizamos cookies para melhorar sua experiência de usuário.
+                Para conferir detalhadamente todos os cookies que usamos, leia <a href="http://">Politica de Privacidade</a>
+        </div>
+        <button id="fechar">Fechar</button>
+    </div>
+`
+
+/* Usando localStorage do site para pegar o modal  e verificar se ele ja esta no site */
+let isPageCookie = localStorage.getItem('modal')
 
 
-        console.log(navegacao.style.marginLeft)
-    }else{
-        navegacao.style.marginLeft = '-100vw'
+/* Verifico se modal não esta aparecendo */
+if(!isPageCookie){
 
-        console.log("Ta fechada")
+    /* se não estiver aparecendo adiciono o modal no html assim que a pagina abrir */
+    document.body.innerHTML += cookieHtml
 
-    }
+    /* Pego as classes referente ao modal e o botão fechar no html   */
+    let Areacookie = document.querySelector('.modal');
+    let botaoFechar = Areacookie.querySelector('button')
+
+    /* Criando uma função assincrona  click para remover o modal assim que clicar em fechar */
+    
+    botaoFechar.addEventListener('click', async () =>{
+        Areacookie.remove()
+        
+    /* A mesma tambem faz a chamada na url ficticia e armazena o id da maquina do usuario que acessou o site */
+        let result = await fetch(urlCookie)
+
+        let json = await result.json()
+
+        if(json.error!= ''){
+
+            let id = '123'
+            localStorage.setItem('modal', id)
+        }
+
+
+
+
+         
+        localStorage.setItem('modal', '123')
+
+        
+    })
 }

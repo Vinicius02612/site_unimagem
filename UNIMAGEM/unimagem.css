@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+header{
+    background-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+}
+
+img{
+    display: inline-block;
+    text-align: center;
+}
+
+
+nav{
+    background-color: rgba(59, 142, 202, 100%);
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-top: 0px;
+
+    padding: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.515);
+    
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+nav > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 25px;
+    margin-left: 0px;
+    font-size: 1em;
+    transition-duration: 0.5s;
+}
+
+.imagem2{
+    width: auto;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+nav > a:hover{
+    color: black;
+}
+
+main{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main > img{
+    width: 100%;
+}
+
+main > img.exames{
+    width: 20%;
+    height: 10%;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+main > img.profissionais{
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+main > img.bemEstar{
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+
+main > h3{
+    margin-left: 50px;
+}
+
+h3.dicas{
+    margin-left: 0;
+}
+
+h3.profic{
+    margin-left: 100px;
+}
+
+h3.sangue{
+    margin-left: 30px;
+}
+
+h3.prof{
+    margin-left: 10px;
+}
+
+h2.home{
+    margin-left: 30px;
+}
