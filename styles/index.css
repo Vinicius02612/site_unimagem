@@ -120,7 +120,7 @@ img{
     text-align: justify;
     font-weight: 200;
 }
-@media screen and (max-width:1298px){
+@media screen and (max-width:1305px){
     .btn_icon{
         display: block;
     }
@@ -135,16 +135,33 @@ img{
         padding: 1em;
         animation-duration: 1s;
         margin-left: -100vw;
+        background-color: #fff;
     }
     .navegacao a{
         width: 100%;
         text-align: center;
     }
+
+    .informacao > .text h1{
+        font-size: 60px;
+        margin-top: 45px;
+
+    }
     .localimg{
         display: none;
     }
-    button{
+    .informacao .submit{
+        padding: auto;
         width: 100%;
+        color: #fff;
+    }
+
+    .fale_conosco > input{
+        width: 100%;
+    }
+
+    .area_forms .enviar_info{
+        max-width: 100%;
     }
 }
 
@@ -157,7 +174,7 @@ img{
 
 /* Tela home */
 .informacao{
-    height: 70vh;
+    height: 90vh;
     background-color: #C5E2E8;
     display: flex;
     flex-direction: row;
@@ -244,7 +261,7 @@ button:hover{
 .sobre > .info_text{
     margin-top: 30px;
     height: 400px;
-    width: 1100px;
+    width: 100%;
 
     text-align: justify;
 }
@@ -274,7 +291,7 @@ button:hover{
     margin-top: 40px;
     font-size: 16pt;
     color: #fff;
-    width: 800px;
+    width: 100%;
 
     align-items: center;
 }
