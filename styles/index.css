@@ -8,10 +8,12 @@ body{
 
 }
 
+
+
 .logo{
     width: 48px;
 }
-img{
+.img_logo{
     width: 135px;
     height: 55px;
 }
@@ -22,11 +24,11 @@ img{
 }
 
 .header{
-    background-color: #fff;
+    background-color: #C5E2E8;
     height: 3.5em;
     justify-content: space-between;
     padding: 0 15%;
-    box-shadow: 1px solid #474444;
+
 }
 
 .navegacao{
@@ -120,56 +122,8 @@ img{
     text-align: justify;
     font-weight: 200;
 }
-@media screen and (max-width:1305px){
-    .btn_icon{
-        display: block;
-    }
 
-    .navegacao{
-        position: absolute;
-        flex-direction: column;
-        top: 0;
-        height: 100%;
-        width: 25vh;
-        left: 0;
-        padding: 1em;
-        animation-duration: 1s;
-        margin-left: -100vw;
-        background-color: #fff;
-    }
-    .navegacao a{
-        width: 100%;
-        text-align: center;
-    }
 
-    .informacao > .text h1{
-        font-size: 60px;
-        margin-top: 45px;
-
-    }
-    .localimg{
-        display: none;
-    }
-    .informacao .submit{
-        padding: auto;
-        width: 100%;
-        color: #fff;
-    }
-
-    .fale_conosco > input{
-        width: 100%;
-    }
-
-    .area_forms .enviar_info{
-        max-width: 100%;
-    }
-}
-
-@keyframes showSideBar {
-    from {margin-left: -100vw;}
-    top {margin-left: -10vw;}
-    
-}
 
 
 /* Tela home */
@@ -267,6 +221,56 @@ button:hover{
 }
 
 
+
+/* Pagina Profissionais */
+
+
+.img_profissionais{
+    margin-left: 40px ;
+
+    height: 500px;
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.img_profissionais:hover{
+    -xpedu-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    transition: 0.5s;
+
+    box-shadow: 5px 5px 5px 5px #8bd3ec
+}
+
+.img_p{
+
+    border-radius: 100%;
+    margin:20px ;
+}
+
+.img_profissionais  > .sbMais{
+    background-color: #22726b;
+    color: #fff;
+}
+
+.img_profissionais > p{
+
+    height: 50px;
+    width: 250px;
+    color: #fff;
+    padding: 10px;
+    background-color: #275564;
+    text-align: center;
+
+}
+
+
 /* Pagina Contato */
 .fale_conosco{
     color: #fff;
@@ -296,5 +300,96 @@ button:hover{
     align-items: center;
 }
 
+.rodape{
+    height: 200px;
+    padding: 0 15%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    
+    background-color: #2e2b43;
+    color: #fff;
+    
+
+}
+
+.rodape .card-deck{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.rodape .card-deck a{
+    text-decoration: none;
+    color: aliceblue;
+}
 
 
+/* Responsividade do site */
+@media screen and (max-width:1305px){
+    .btn_icon{
+        display: block;
+    }
+
+    .navegacao{
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        height: 100%;
+        width: 25vh;
+        left: 0;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+        background-color: #fff;
+    }
+    .navegacao a{
+        width: 100%;
+        text-align: center;
+    }
+
+    .informacao > .text h1{
+        font-size: 60px;
+        margin-top: 45px;
+
+    }
+    .localimg{
+        display: none;
+    }
+    .informacao .submit{
+        padding: auto;
+        width: 100%;
+        color: #fff;
+    }
+
+    .fale_conosco > input{
+        width: 100%;
+    }
+
+    .area_forms .enviar_info{
+        max-width: 100%;
+    }
+}
+@media screen and (max-width:375px){
+    .rodape .card-deck{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+    }
+    
+
+    .rodape .card-deck a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+    
+}
+@keyframes showSideBar {
+    from {margin-left: -100vw;}
+    top {margin-right: -10vw;}
+    
+}

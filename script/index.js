@@ -51,8 +51,8 @@ if(!isPageCookie){
 
 
          
-        localStorage.setItem('modal', '123')
-
+/*         localStorage.setItem('modal', '123')
+ */
         
     })
 }
