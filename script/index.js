@@ -21,7 +21,7 @@ let cookieHtml = `
 let isPageCookie = localStorage.getItem('modal')
 
 
-/* Verifico se modal não esta aparecendo */
+/* Verifico se modal não esta aparecendo, se for o primeiro acesso do usuario na pagina */
 if(!isPageCookie){
 
     /* se não estiver aparecendo adiciono o modal no html assim que a pagina abrir */
