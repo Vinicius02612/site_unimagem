@@ -45,12 +45,7 @@ if(!isPageCookie){
 
             let id = '123'
             localStorage.setItem('modal', id)
-        }
-
-
-
-
-         
+        }         
 /*         localStorage.setItem('modal', '123')
  */
         
