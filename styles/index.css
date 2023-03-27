@@ -234,9 +234,20 @@ button:hover{
 
     padding: 0 15%;
 
+/*     background-color: #DDF1F8;
+ */
+    margin-top: auto 0;
+
+    margin-bottom: 150px;
+
+
+ 
+
+
 }
 
 .sobre > h1{
+    margin-top: 100px;
     color: #22726b;
     text-align: center;
 }
@@ -250,8 +261,8 @@ button:hover{
 }
 
 .sobre > hr{
-    color: #22726b;
-    height: 10px;
+    background-color: #22726b;
+   
 }
 
 
@@ -261,20 +272,33 @@ button:hover{
        
 /*     background-color: #f1ecec
  */
+ background-color: #e1edf1;
+
+ margin: 0 auto;
+
+ padding: 0 15%;
+
 }
 
 .servicos > h1{
     text-align: center;
     color: #22726b;
 
-    margin: 20px;
-
+    padding: 20px;
     
+}
+
+.servicos > hr{
+    background-color: #22726b;
+    height: 1px;
 }
 
 .container{
 /*     border: 1px solid #22726b;
- */    width: 100%;
+
+ */    
+    
+    width: 100%;
 
     display: flex;
     flex-direction: row;
@@ -290,7 +314,7 @@ button:hover{
 
 
 .container:hover{
-    box-shadow: 15px 15px 15px 15px #DDF1F8;
+    box-shadow: 15px 15px 15px 15px #8AC2D0;
     transition: 0.5s;
 }
 
@@ -338,6 +362,8 @@ button:hover{
     align-items: center;
     justify-content: center;
     color: #22726b;
+
+    background-color: #fff;
 }
 
 .img_profissionais:hover{
@@ -346,7 +372,7 @@ button:hover{
     transform: scale(1);
     transition: 0.5s;
 
-    box-shadow: 5px 5px 5px 5px #8bd3ec
+    box-shadow: 15px 15px 5px 15px #8AC2D0;
 }
 
 .img_p{
@@ -365,12 +391,17 @@ button:hover{
 }
 
 .container_profissionais{
-    background-color: #ffffffbf;
     padding:  0 15%;
     margin-bottom: auto;
+
+    background-color: #e1edf1;
+
 }
 .container_profissionais > hr{
     color: #22726b;
+    height: 1px;
+
+    background-color: #22726b;
 }
 
 .nosso_profissionais{
@@ -380,8 +411,22 @@ button:hover{
     color: #275564;
 }
 
+/* Pagina de dicas */
 
+.dicas{
+    background-color: #e1edf1;
+}
 
+.dicas > h2{
+    text-align: center;
+    color: #275564;
+    margin-bottom: 40px;
+}
+.dicas > .info-dicas{
+    padding: 0 15%;
+
+    padding-bottom: 50px;
+}
 /* Pagina Contato */
 .fale_conosco{
     color: #fff;
