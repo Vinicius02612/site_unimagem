@@ -250,7 +250,7 @@ button:hover{
 /* Pagina sobre */
 
 .sobre{
-    margin-top: 140px;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -260,9 +260,7 @@ button:hover{
 
 /*     background-color: #DDF1F8;
  */
-    margin-top: auto 0;
 
-    margin-bottom: 150px;
 
 
  
@@ -271,13 +269,11 @@ button:hover{
 }
 
 .sobre > h1{
-    margin-top: 100px;
     color: #22726b;
     text-align: center;
 }
 
 .sobre > .info_text{
-    margin-top: 30px;
     height: 100px;
     width: 100%;
 
@@ -371,6 +367,7 @@ button:hover{
 }
 .container > .text-servico > h2{
     text-align: center;
+    margin-top: 0;
 }
 .imgs{
 
@@ -382,14 +379,20 @@ button:hover{
 }
 
 /* Pagina Profissionais */
+.profissionais{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
+    padding-bottom: 50px;
+}
 
 .img_profissionais{
-    margin-left: 40px ;
 
-    height: 500px;
-    width: 500px;
-
+    
+    width: 350px;
+    height: 380px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -397,6 +400,9 @@ button:hover{
     color: #22726b;
 
     background-color: #fff;
+
+    margin: 10px;
+
 }
 
 .img_profissionais:hover{
@@ -409,9 +415,8 @@ button:hover{
 }
 
 .img_p{
-
+    font-size: 10px;
     border-radius: 100%;
-    margin:10px ;
 }
 
 .img_profissionais  > .sbMais{
@@ -464,10 +469,11 @@ button:hover{
 
     padding-bottom: 50px;
 }
+
+
 /* Pagina Contato */
 .fale_conosco{
     color: #fff;
-    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -490,6 +496,8 @@ button:hover{
     width: 100%;
 
     align-items: center;
+
+    margin-bottom: 20px;
 }
 
 .fale_conosco > .area_forms > .forms > .enviar_info{
@@ -501,6 +509,7 @@ button:hover{
     border: none;
 
     color: #fff;
+
 }
 
 .fale_conosco > .area_forms > .forms > .enviar_info:hover{
@@ -512,7 +521,7 @@ button:hover{
 
 
 .rodape{
-    height: 200px;
+    height: 20vh;
     padding: 0 15%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -632,9 +641,24 @@ button:hover{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
     }
     .rodape > .card-deck{
-        padding: 20px;
+        margin-top: 10px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rodape > .card-deck > .svg{
+        font-size: 10pt;
+    }
+
+    .rodape > .card-deck > svg{
+        width: 15px;
+        height: 15px;
     }
 }
 
@@ -662,10 +686,31 @@ button:hover{
     
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:600px){
 
     .img-service{
         display: none;
+    }
+
+
+    .NomeUni{
+        font-size: 50pt;
+    }
+
+    .informacao > .text > .text-informa{
+        font-size: small;
+    }
+
+    .text-servico > h2{
+        font-size: 20pt;
+        padding: 10px;
+    }
+    .text-servico >  p,button{
+        font-size: medium;
+    }
+
+    .img_profissionais{
+        width: 100%;
     }
     .rodape .card-deck{
         width: 100%;
@@ -673,6 +718,29 @@ button:hover{
         flex-direction: column;
         justify-content: center;
         gap: 5px;
+    }
+
+    .sobre{
+        margin: 0;
+    }
+
+    .sobre > h1{
+        font-size: 1.9rem;
+    }
+
+    .sobre > .info_text > p{
+        margin-top: 0 auto;
+        height: 100px;
+        width: 100%;
+        text-align: justify;
+
+        font-size: medium;
+
+        margin-bottom: 30px;
+    }
+
+    .fale_conosco{
+        height: 100vh;
     }
     
 

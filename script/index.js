@@ -3,14 +3,14 @@
 let urlCookie = 'https://jsonplaceholder.typicode.com/posts' 
 
 
-/* modal de com as informações do cookie e politca de privacidade */
+/* modal com as informações do cookie e politca de privacidade */
 let cookieHtml = `
 
     <div class="modal">
         <h3>Atenção</h3>
         <div class="text-modal">      
             <p>
-            Nós uttilizamos cookies para melhorar sua experiência de usuário.
+            Nós utilizamos cookies para melhorar sua experiência de usuário.
                 Para conferir detalhadamente todos os cookies que usamos, leia: <a class="link" href="http://"> Politica de Privacidade</a>
         </div>
         <button id="fechar">Fechar</button>

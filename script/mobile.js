@@ -1,7 +1,7 @@
 const btnMenu =  document.getElementById('btn_icon')
 
 function criaMenu(){
-    const navega = document.getElementById('navegacao')
+    const navega = document.getElementById('header')
 
     navega.classList.toggle('active')
 
@@ -9,4 +9,4 @@ function criaMenu(){
 }
 
 
-btnMenu.addEventListener('click', criaMenu)
+btnMenu.addEventListener('click', criaMenu) 
