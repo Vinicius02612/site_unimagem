@@ -11,7 +11,7 @@ let cookieHtml = `
         <div class="text-modal">      
             <p>
             Nós uttilizamos cookies para melhorar sua experiência de usuário.
-                Para conferir detalhadamente todos os cookies que usamos, leia <a href="http://">Politica de Privacidade</a>
+                Para conferir detalhadamente todos os cookies que usamos, leia: <a class="link" href="http://"> Politica de Privacidade</a>
         </div>
         <button id="fechar">Fechar</button>
     </div>

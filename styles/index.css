@@ -28,6 +28,7 @@ body{
 
 
 .header{
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -114,7 +115,7 @@ body{
     box-shadow: 0 0 50px #ccc;
 
 }
-.modal button{
+.modal > button{
     margin-top: 50px;
     width: 50%;
     height: 50px;
@@ -131,7 +132,14 @@ body{
     cursor: pointer;
 }
 
+.modal > button:hover{
+    background-color: #22726b;   
+}
 
+
+.modal > .text-modal > .link{
+    margin-top: 100px;
+}
 .text-modal{
     height: 50%;
     width: 100%;
@@ -139,7 +147,7 @@ body{
     padding: 30px;
 }
 
-.modal  h3{
+.modal > h3{
     color: red;
     font-weight: bolder;
 }
@@ -147,7 +155,9 @@ body{
 
 .text-modal > p{
     text-align: justify;
-    font-weight: 200;
+    font-weight: 500;
+
+    color: red;
 }
 
 
@@ -155,7 +165,7 @@ body{
 
 /* Tela home */
 .informacao{
-    height: 78vh;
+    height: 100vh;
     background-color: #25a4bd;
     display: flex;
     flex-direction: row;
@@ -188,12 +198,12 @@ p{
 }
 
 
-button{
+.informacao > .text > button{
     margin-top: 50px;
     width: 50%;
     height: 50px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: #0f52605e;
+    background: #0a55645e;
 
     color: #fff;
 
@@ -204,20 +214,34 @@ button{
     border-radius: 5px;
     cursor: pointer;
 }
- a{
+
+.informacao > .text > button:hover{
+    margin-top: 50px;
+    width: 50%;
+    height: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #052a325e;
+
+    color: #fff;
+
+    font-weight: bold;
+    font-size: 14pt;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.informacao > .text > button > a{
     text-decoration: none;
     color: #fff;
     text-transform: capitalize;
 }
-a:hover{
+.informacao > .text > a:hover{
     text-decoration: none;
     color: #fff;
-
 }
 button:hover{
-
     background: #ffffff3a;
-   
 }
 
 
@@ -294,35 +318,43 @@ button:hover{
 }
 
 .container{
-/*     border: 1px solid #22726b;
-
- */    
     
     width: 100%;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
     padding: 30px;
-
     margin-top: 20px;
-
     background-color: #ffffff;
-
 }
 
 
 .container:hover{
-    box-shadow: 15px 15px 15px 15px #8AC2D0;
+    box-shadow: 5px  20px 20px 5px #8AC2D0;
     transition: 0.5s;
 }
 
 .text-servico > .consulta{
     background-color: #22726b;
     height: 50px;
-    
+}
 
+.text-servico > .consulta{
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+
+    border: none;
+}
+
+.text-servico > .consulta:hover{
+    background-color: #25a4bd;
+    padding: 10px;
+    border-radius: 5px;
+
+    border: none;
+
+    font-weight: 700;
 }
 
 .container > .text-servico{
@@ -341,6 +373,7 @@ button:hover{
     text-align: center;
 }
 .imgs{
+
     width: 520px;
     height: 400px;
 
@@ -372,7 +405,7 @@ button:hover{
     transform: scale(1);
     transition: 0.5s;
 
-    box-shadow: 15px 15px 5px 15px #8AC2D0;
+    box-shadow: 5px  20px 20px 5px #8AC2D0;
 }
 
 .img_p{
@@ -388,6 +421,9 @@ button:hover{
 
 .img_profissionais > p{
     text-align: center;
+}
+.img_profissionais span{
+    font-weight: bold;
 }
 
 .container_profissionais{
@@ -417,10 +453,11 @@ button:hover{
     background-color: #e1edf1;
 }
 
-.dicas > h2{
+.dicas > h1{
     text-align: center;
     color: #275564;
     margin-bottom: 40px;
+
 }
 .dicas > .info-dicas{
     padding: 0 15%;
@@ -455,6 +492,25 @@ button:hover{
     align-items: center;
 }
 
+.fale_conosco > .area_forms > .forms > .enviar_info{
+    width: 100%;
+    height: 50px;
+    background-color: #529F99;
+
+    border-radius: 5px;
+    border: none;
+
+    color: #fff;
+}
+
+.fale_conosco > .area_forms > .forms > .enviar_info:hover{
+
+    background-color: #22726b;
+    transition: 0.5s;
+
+}
+
+
 .rodape{
     height: 200px;
     padding: 0 15%;
@@ -484,9 +540,15 @@ button:hover{
 
 /* Responsividade do site */
 @media screen and (max-width:1305px){
+    .img-service{
+        display: none;
+    }
+ 
     .btn_icon{
         display: block;
     }
+
+    
 
     .navegacao{
         position: absolute;
@@ -505,9 +567,29 @@ button:hover{
         text-align: center;
     }
 
+    .informacao{
+        padding-bottom: 100px;
+    }
+
     .informacao > .text h1{
-        font-size: 60px;
-        margin-top: 45px;
+        font-size: 40px;
+        margin-top: auto;
+
+    }
+
+    .informacao .text > p{
+        font-size: medium;
+    }
+
+    .sobre .text-info > p{
+        font-size: medium;
+    }
+
+    .informacao > button{
+        width: 20%;
+        height: 20px;
+
+        padding: 0;
 
     }
     .localimg{
@@ -519,32 +601,57 @@ button:hover{
         color: #fff;
     }
 
+    .fale_conosco{
+        padding-top: 100px;
+        font-size: x-small;
+    }
+
+    .fale_conosco >h1,h2{
+        font-size: 15pt;
+    }
+
+    .forms > textarea{
+        height: 100px ;
+    }
+
     .fale_conosco > input{
         width: 100%;
     }
 
     .area_forms .enviar_info{
         max-width: 100%;
+
+    }
+
+    .fale_conosco{
+        padding-bottom: 100px;
+    }
+
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rodape > .card-deck{
+        padding: 20px;
     }
 }
 
 
 @media screen and (min-width:700px){
-
+   
     .localimg{
         margin-top: auto;
+    }
+
+    *{
+        font-size: -10pt;
     }
 
     .img{
         /* Rendered size:	408 × 612 p */
         margin-top: auto;
-    }
-    .rodape .card-deck{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 5px;
     }
     
 
@@ -556,6 +663,10 @@ button:hover{
 }
 
 @media screen and (max-width:375px){
+
+    .img-service{
+        display: none;
+    }
     .rodape .card-deck{
         width: 100%;
         display: flex;
